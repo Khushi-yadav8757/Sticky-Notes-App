@@ -1,70 +1,110 @@
+/* RESET */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 }
 
+/* BODY */
+
 body{
-background:#f4f6f8;
+background: linear-gradient(135deg,#667eea,#764ba2);
+min-height:100vh;
 padding:20px;
 transition:0.3s;
+color:#333;
 }
+
+/* HEADER */
 
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-margin-bottom:20px;
+margin-bottom:25px;
 flex-wrap:wrap;
+
+background:rgba(255,255,255,0.2);
+padding:15px 20px;
+border-radius:10px;
+backdrop-filter: blur(10px);
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
 }
+
+/* CONTROLS */
 
 .controls{
 display:flex;
 gap:10px;
+flex-wrap:wrap;
 }
+
+/* BUTTONS */
 
 button{
 padding:8px 14px;
 border:none;
-border-radius:5px;
+border-radius:6px;
 cursor:pointer;
+font-weight:600;
+transition:0.2s;
 }
 
-#addBtn{background:#4CAF50;color:white;}
-#exportBtn{background:#2196F3;color:white;}
+button:hover{
+transform:scale(1.05);
+}
+
+#addBtn{
+background:#4CAF50;
+color:white;
+}
+
+#exportBtn{
+background:#2196F3;
+color:white;
+}
+
+/* NOTES GRID */
 
 #notesContainer{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:15px;
+gap:18px;
 }
 
 /* NOTE CARD */
 
 .note{
-padding:12px;
-border-radius:8px;
+padding:14px;
+border-radius:10px;
 min-height:180px;
 display:flex;
 flex-direction:column;
 position:relative;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
 transition:0.2s;
 cursor:grab;
 }
 
 .note:hover{
-transform:scale(1.03);
+transform:scale(1.04);
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
+
+/* NOTE INPUT */
 
 .note input{
 border:none;
 background:transparent;
 font-weight:bold;
-margin-bottom:6px;
+font-size:16px;
+margin-bottom:8px;
 outline:none;
 }
+
+/* NOTE TEXTAREA */
 
 .note textarea{
 border:none;
@@ -72,6 +112,7 @@ resize:none;
 flex:1;
 background:transparent;
 outline:none;
+font-size:14px;
 }
 
 /* NOTE ACTIONS */
@@ -79,30 +120,51 @@ outline:none;
 .actions{
 display:flex;
 justify-content:space-between;
-margin-top:6px;
+margin-top:8px;
 }
+
+/* DELETE */
 
 .delete{
 cursor:pointer;
-color:red;
+color:#ff3b3b;
+font-size:18px;
 }
+
+/* PIN */
 
 .pin{
 cursor:pointer;
+font-size:18px;
 }
 
-/* COLORS */
+/* NOTE COLORS */
 
-.yellow{background:#fff475;}
-.pink{background:#ffd6e7;}
-.blue{background:#d6f0ff;}
-.green{background:#d7ffd9;}
+.yellow{
+background:#fff475;
+}
+
+.pink{
+background:#ffd6e7;
+}
+
+.blue{
+background:#d6f0ff;
+}
+
+.green{
+background:#d7ffd9;
+}
 
 /* DARK MODE */
 
 .dark{
-background:#1e1e1e;
+background: linear-gradient(135deg,#141e30,#243b55);
 color:white;
+}
+
+.dark header{
+background:rgba(0,0,0,0.3);
 }
 
 .dark .note{
