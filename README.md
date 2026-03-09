@@ -60,56 +60,44 @@ let notes = JSON.parse(localStorage.getItem("notes")) || [];
 
 This ensures that the notes persist even after refreshing the browser.
 
-📂 Project Structure
+## 📂 Project Structure
 Sticky-Notes-App
 │
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
-📱 Responsive Design
+
+
+## 📱 Responsive Design
 
 The application uses CSS Grid Layout to ensure responsiveness.
-
 The layout automatically adjusts for:
 
 Desktop
-
 Tablet
-
 Mobile devices
 
-🌟 Learning Outcomes
+## 🌟 Learning Outcomes
 
 This project demonstrates important front-end development concepts such as:
-
 DOM Manipulation
-
 Event Handling
-
 LocalStorage Data Persistence
-
 Responsive Web Design
-
 Clean UI Development
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
 Possible upgrades for this project:
-
 Drag and drop notes
-
 Pin important notes
-
 Note color picker
-
 Export notes as file
-
 Cloud sync using Firebase
-
 User authentication system
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Khushi Yadav
 
